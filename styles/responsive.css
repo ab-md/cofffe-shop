@@ -1,0 +1,103 @@
+@media only screen and (min-width: 500px) {
+
+    .story-text, .story-image,
+    .menu-detail, .menu-album,
+    .delecious-desc, .delecious-album,
+    .about-us, .cta {
+        width: 100%;
+    }
+
+    .story-image,
+    .menu-album,
+    .delecious-album,
+    .cta {
+        margin-top: 50px;
+    }
+
+    .menu-album {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 1fr);
+    }
+
+    .delecious-album {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 1fr);
+    }
+
+    .about-container {
+        flex-direction: column;
+    }
+
+    .about-us {
+        text-align: center;
+    }
+
+    .cta {
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .social {
+        margin-top: 50px;
+    }
+
+    .social p {
+        text-align: right;
+    }
+
+}
+
+@media only screen and (min-width: 768px) {
+
+    .menu-album {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+
+    .delecious-album {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr;
+    }
+
+    .cta {
+        flex-direction: row;
+    }
+
+    .social {
+        margin-top: 0;
+        margin-right: 50px;
+    }
+
+}
+
+@media only screen and (min-width: 992px) {
+
+    .story-text, .story-image,
+    .menu-detail, .menu-album,
+    .about-us, .cta {
+        width: 50%;
+    }
+
+}
+
+@media only screen and (min-width: 1200px) {
+
+    .delecious-desc, .delecious-album {
+        width: 50%;
+    }
+
+    .about-container {
+        flex-direction: row;
+    }
+
+    .about-us {
+        width: 50%;
+        text-align: right;
+    }
+
+    .cta {
+        width: 50%;
+        margin-top: 0;
+    }
+
+}

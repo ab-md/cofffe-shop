@@ -1,0 +1,51 @@
+@mixin fontStyle($size, $weight, $color) {
+    font-size: $size;
+    font-weight: $weight;
+    color: $color;
+}
+
+@mixin paralax ($url, $height,) {
+    background-image: url($url);
+    height: $height;
+    background-attachment: fixed;
+    background-size: cover;
+    position: relative;
+}
+
+@mixin media ($width) {
+    @if ($width ==xs) {
+        @media only screen and (max-width: 525px) {
+            @content
+        }
+    }
+
+    @else if ($width ==sm) {
+        @media screen and (min-width: 576px) {
+            @content
+        }
+    }
+
+    @else if ($width ==nav) {
+        @media screen and (max-width: 768px) {
+            @content
+        }
+    }
+
+    @else if ($width ==md) {
+        @media screen and (min-width: 768px) {
+            @content
+        }
+    }
+
+    @else if ($width ==lg) {
+        @media screen and (min-width: 992px) {
+            @content
+        }
+    }
+
+    @else if ($width ==xl) {
+        @media screen and (min-width : 1200px) {
+            @content
+        }
+    }
+}
