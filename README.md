@@ -1,6 +1,6 @@
 # Static website template
 
-This is one of my former  designs
+This is one of my former templates which I have used sass to design it
 
 ## Project Perview
 ### Header
